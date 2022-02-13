@@ -41,7 +41,19 @@ function App() {
             placeholder='Search' onChange={handleSearch}/>
           </form>
       </div>
-        
+      {filteredCoins.map(coin => {
+          return (
+            <div className='coin-component'>
+              <Coin key={coin.id} 
+              name={coin.name} 
+              price={coin.price} 
+              image={coin.image} 
+              symbol={coin.symbol} 
+              marketCap={coin.market_cap}
+              />
+            </div>
+          )
+        })}
     </div>
   );
 }
