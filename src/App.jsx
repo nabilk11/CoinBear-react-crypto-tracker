@@ -20,7 +20,15 @@ function App() {
 
 
   return (
-    
+    <div className="coin-app">
+      <div className="search-bar">
+        <h1 className="coin-text">Search for a Cryptocurrency</h1>
+          <form action="">
+            <input type="text" name="coin" className="coin-search" id="coin" placeholder='Search'/>
+          </form>
+      </div>
+      
+    </div>
   );
 }
 
