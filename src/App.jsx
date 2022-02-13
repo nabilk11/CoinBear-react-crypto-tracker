@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './App.css';
 import axios from 'axios';
 import Coin from './components/Coin/Coin';
-
+import CoinBear from './coin-bear.png';
 const BASE_URL = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false'
 
 
@@ -34,6 +34,10 @@ function App() {
 
   return (
     <div className="coin-app">
+      <div className="head-img">
+      <h1 className='app-head'>Coin Bear | <small>Crypto Tracker</small></h1>
+      <img className='bear' src={CoinBear} alt="" />
+      </div>
       <div className="search-bar">
         <h1 className="coin-text">Search for a Cryptocurrency</h1>
           <form action="">
