@@ -1,3 +1,13 @@
+# Coin Bear | React Crypto Tracker
+As of v1.0 the application is currently being called Coin Bear, and was deployed using the Netlify CLI here:
+https://coin-bear.netlify.app/
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
