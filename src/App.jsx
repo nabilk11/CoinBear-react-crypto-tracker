@@ -51,6 +51,7 @@ function App() {
               symbol={coin.symbol} 
               marketCap={coin.market_cap}
               priceChange={coin.price_change_24h}
+              priceChangePercent={coin.price_change_percentage_24h}
               />
             </div>
           )
