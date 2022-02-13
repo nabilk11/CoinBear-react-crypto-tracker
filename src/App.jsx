@@ -46,7 +46,7 @@ function App() {
             <div className='coin-component'>
               <Coin key={coin.id} 
               name={coin.name} 
-              price={coin.price} 
+              price={coin.current_price} 
               image={coin.image} 
               symbol={coin.symbol} 
               marketCap={coin.market_cap}
