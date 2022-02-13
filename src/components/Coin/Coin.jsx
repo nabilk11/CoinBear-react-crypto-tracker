@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Coin({ name, image, symbol, price, marketCap }) {
+export default function Coin({ name, image, symbol, price, marketCap, priceChange }) {
   return (
     <div className='coin-container'>
         <div className="coin-row">
@@ -10,8 +10,12 @@ export default function Coin({ name, image, symbol, price, marketCap }) {
                 <p className="coin-symbol">{symbol}</p>
             </div>
             <div className="coin-data">
-                <p className="coin-price">${price}</p>
+                <p className="coin-price">${ price }</p>
                 <p className="coin-volume">Market Cap: ${marketCap.toLocaleString()}</p>
+            {priceChange < 0 ? (
+                <p className="percent-change red">{priceChange.toFixed(2)}%</p>
+            ) : (<p className="percent-change green">{priceChange.toFixed(2)}%</p>)
+        }
             </div>
         </div>
 
