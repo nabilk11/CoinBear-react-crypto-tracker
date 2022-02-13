@@ -27,6 +27,10 @@ function App() {
     setSearch(e.target.value)
   }
 
+  // filter search terms
+  const filteredCoins = coins.filter(coin =>
+    coin.name.toLowerCase().includes(search.toLowerCase()) 
+    )
 
   return (
     <div className="coin-app">
@@ -37,7 +41,7 @@ function App() {
             placeholder='Search' onChange={handleSearch}/>
           </form>
       </div>
-      
+        
     </div>
   );
 }
